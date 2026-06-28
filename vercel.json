@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "buildCommand": "mkdir -p public && cp -r src/main/resources/static/Frontend/* public/",
+  "outputDirectory": "public",
+  "framework": null
+}
