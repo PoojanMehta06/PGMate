@@ -1,5 +1,5 @@
 -- Seed amenities (runs automatically on startup)
-INSERT IGNORE INTO amenities (amenity_name) VALUES
+INSERT INTO amenities (amenity_name) VALUES
   ('WiFi'),
   ('AC'),
   ('Food'),
@@ -7,4 +7,5 @@ INSERT IGNORE INTO amenities (amenity_name) VALUES
   ('Laundry'),
   ('Gym'),
   ('Power Backup'),
-  ('Water Purifier');
+  ('Water Purifier')
+ON CONFLICT (amenity_name) DO NOTHING;

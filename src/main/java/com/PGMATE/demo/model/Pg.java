@@ -41,7 +41,7 @@ public class Pg {
     private Integer rent;
     
     @Lob
-    @Column(columnDefinition = "LONGTEXT")
+    @Column(columnDefinition = "TEXT")
     private String image;
 
     @ManyToMany(fetch = FetchType.EAGER)
